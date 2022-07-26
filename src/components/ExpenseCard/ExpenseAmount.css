@@ -1,0 +1,6 @@
+.expense-amount {
+    background-color: hsl(25, 47%, 15%);
+    color: white;
+    border-radius: 5px;
+    padding: 2%;
+}

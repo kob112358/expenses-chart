@@ -1,0 +1,24 @@
+.card__desktop {
+    width: 40%;
+    border-radius: 15px;
+    padding: 3%;
+    margin: 1%;
+    min-width: 280px;
+}
+
+.balance-header {
+    background-color: hsl(10, 79%, 65%);
+  }
+
+  .chart-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .chart-card h3 {
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+  }

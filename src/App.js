@@ -1,23 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import Card from "./components/UI/Card";
+import ExpenseChart from "./components/ExpenseCard/ExpenseChart.js";
+import SpendingData from "./assets/data";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+      <Card className=" balance-header">
+        <div>
+          <h4>My balance</h4>
+          <h3>$921.48</h3>
+        </div>
+        <i class="fa-solid fa-landmark"></i>
+      </Card>
+      <Card className=" chart-card">
+        <h3>Spending - Last 7 days</h3>
+        <ExpenseChart dailyExpenditures={SpendingData} />
+        <div>
+          <div>
+            <h4>Total this month</h4>
+            <h2>$478.33</h2>
+          </div>
+          <div>
+            <h5>+2.4% from last month</h5>
+          </div>
+        </div>
+      </Card>
+      <div class="attribution">
+        Challenge by{" "}
+        <a href="https://www.frontendmentor.io?ref=challenge">
+          Frontend Mentor
         </a>
-      </header>
+        . Coded by{" "}
+        <a href="https://www.frontendmentor.io/profile/kob112358">
+          Eric Kobliska
+        </a>
+        .
+      </div>
     </div>
   );
 }
