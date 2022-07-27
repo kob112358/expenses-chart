@@ -17,13 +17,14 @@ function App() {
       <Card className=" chart-card">
         <h3>Spending - Last 7 days</h3>
         <ExpenseChart dailyExpenditures={SpendingData} />
-        <div>
+        <div className="chart-footer">
           <div>
             <h4>Total this month</h4>
             <h2>$478.33</h2>
           </div>
           <div>
-            <h5>+2.4% from last month</h5>
+            <h2>+2.4%</h2>
+            <h4>from last month</h4>
           </div>
         </div>
       </Card>

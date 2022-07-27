@@ -1,13 +1,28 @@
 .card__desktop {
     width: 40%;
     border-radius: 15px;
-    padding: 3%;
+    padding: 10px 2%;
     margin: 1%;
     min-width: 280px;
 }
 
 .balance-header {
     background-color: hsl(10, 79%, 65%);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+
+.balance-header h4{ 
+    font-size: 14px;
+    text-align: left;
+    font-weight: 200;
+}
+
+  .balance-header h3 {
+    font-size: 24px;
   }
 
   .chart-card {
@@ -16,9 +31,18 @@
     flex-direction: column;
   }
 
+  .chart-card > div {
+    color: hsl(25, 47%, 15%);
+  }
+
 
   .chart-card h3 {
     text-align: left;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
+    color: hsl(25, 47%, 15%);
+  }
+
+  .balance-header > i {
+    align-self: center;
   }
