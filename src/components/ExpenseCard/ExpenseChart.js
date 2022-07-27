@@ -1,6 +1,5 @@
 import React from "react";
 import "./ExpenseChart.css";
-import { useState } from "react";
 import ExpenseBar from "./ExpenseBar";
 
 const ExpenseChart = (props) => {
